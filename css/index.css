@@ -1,0 +1,377 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Gylroy Regular', Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: 'Gilroy Regular';
+  src: url(../fonts/gilroy/regular/Gilroy-Regular.eot);
+  src: url(../fonts/gilroy/regular/Gilroy-Regular.eot) format('embedded-opentype'),
+  url(../fonts/gilroy/regular/Gilroy-Regular.woff) format('woff'),
+  url(../fonts/gilroy/regular/Gilroy-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: 'Gilroy Italic';
+  src: url(../fonts/gilroy/regular_italic/Gilroy-RegularItalic.eot);
+  src: url(../fonts/gilroy/regular_italic/Gilroy-RegularItalic.eot) format('embedded-opentype'),
+  url(../fonts/gilroy/regular_italic/Gilroy-RegularItalic.woff) format('woff'),
+  url(../fonts/gilroy/regular_italic/Gilroy-RegularItalic.ttf) format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gilroy Bold';
+  src: url(../fonts/gilroy/bold/Gilroy-Bold.eot);
+  src: url(../fonts/gilroy/bold/Gilroy-Bold.eot) format('embedded-opentype'),
+  url(../fonts/gilroy/bold/Gilroy-Bold.woff) format('woff'),
+  url(../fonts/gilroy/bold/Gilroy-Bold.ttf) format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  src: url(../fonts/Myriad_Pro/regular/MyriadPro-Regular.eot);
+  src: url(../fonts/Myriad_Pro/regular/MyriadPro-Regular.eot) format('embedded-opentype'),
+  url(../fonts/Myriad_Pro/regular/MyriadPro-Regular.woff) format('woff'),
+  url(../fonts/Myriad_Pro/regular/MyriadPro-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header_nav {
+  width: 100%;
+  height: 70px;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header_nav_img {
+  width: 166px;
+  height: 67px;
+}
+
+.header_nav_list {
+  display: flex;
+}
+
+.header_nav_list_item {
+  list-style-type: none;
+  margin-right: 42px;
+}
+
+.header_nav_list_item_link {
+  font-family: 'Gilroy Regular', Arial, sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  opacity: 0.69;
+  line-height: 1.2;
+  
+}
+.header_nav_list_item:last-child {
+  margin-right: 0;
+}
+
+.header_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url(../img/band_4671748_1920_1193.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 704px;
+}
+
+.header_box_description_caption {
+  box-shadow: inset 0px 10px 38px 0px rgba(0,0,0,0.03);
+  font-family: 'Gilroy Bold', Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #ffffff;
+  
+}
+
+.header_box_description_caption_h2 {
+  font-size: 36px;
+  font-family: 'Myriad Pro Regular', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+  max-width: 458px;
+  margin-top: 23px;
+}
+
+.header_box_description_caption_h2::after {
+  margin-top: 32px;
+  content: "";
+  display: block;
+  width: 70px;
+  height: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  margin-bottom: 25px;
+}
+
+.header_box_description_specification {
+  opacity: 0.8;
+  font-family: 'Gilroy Regular', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #ffffff;
+  border-color: transparent;
+  max-width: 528px;
+}
+
+.header_box_description_button {
+  font-family: 'Gilroy Regular', Arial, Helvetica, sans-serif;
+  background-color: transparent;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+  width: 135px;
+  height: 42px;
+  border: 2px solid #ffffff;
+  margin-top: 33px;
+}
+
+.header_box_form {
+  width: 360px;
+  height: 366px;
+  box-sizing: border-box;
+}
+
+.header_box_form_head {
+  border-radius: 3px 3px 0 0;
+  width: 360px;
+  height: 54px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_box_form_head_caption1, .header_box_form_head_caption2 {
+  font-family: 'Gilroy Regular';
+  font-size: 22.6px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.header_box_form_head_caption1 {
+  color: #000000;
+}
+
+.header_box_form_head_caption2 {
+  color: #cc3333;
+}
+
+.header_box_form_foundation_label {
+  padding-top: 47px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.header_box_form_foundation_form_InputEmail, .header_box_form_foundation_form_Inputname, .header_box_form_foundation_form_InputNumber {
+  width: 285px;
+  height: 31px;
+  border: 1px solid #f5f5f5;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.header_box_form_foundation_form_InputNumber {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.header_box_form_foundation_form_InputEmail {
+  margin-bottom: 47px;
+}
+
+.header_box_button {
+  width: 360px;
+  height: 54px;
+  background-color: #cc3333; 
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #ffffff;
+  border: 0;
+  border-radius: 0 0 3px 3px;
+}
+
+.col_box_article:nth-child(odd) {
+background-color: #f5f5f5;
+}
+
+.col_box_article {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.col_box_guitar_buttons {
+  display: flex;
+  flex-direction: column;
+  width: 112px;
+}
+
+.col_box_guitar_button {
+width: 112px;
+height: 112px;
+background-color: #212121;
+border: 0.5px solid #f5f5f5;
+text-transform: uppercase;
+color: #ffffff;
+}
+
+.col_box_guitar_button:last-child {
+  border-radius: 0 0 3px 3px;
+}
+
+.col_box_guitar_button:first-child {
+  border-radius: 3px 3px 0 0 ;
+}
+
+.col_box_guitar_button:hover, .col_box_guitar_button:focus {
+  background-color: #cc3333;
+}
+
+.col_box_guitar_header {
+font-size: 25px;
+line-height: 1.2;
+font-weight: 400;
+color: #000000;
+}
+
+.col_box_guitar_descriptions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 468px;
+}
+
+.col_box_guitar_description {
+font-size: 14px;
+line-height: 20px;
+font-weight: 400;
+color: #86878b;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+.col_box_guitar_download {
+border: 0;
+width: 121px;
+height: 46px;
+background-color: #cc3333;
+color: #ffffff;
+border-radius: 3px;
+}
+
+.col_box_guitar_img {
+  width: 40%;
+}
+
+.col_box_article {
+padding-top: 90px;
+padding-bottom: 165px;
+
+}
+
+.col_box_acusticGuitar_img {
+  width: 455px;
+  height: 303px;
+  opacity: 0.85;
+  background-color: #000000;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* .col_box_acusticGuitar_img::after {
+  content: "";
+  position: absolute;
+  background-color: #000000;
+  top: 0;
+  left: 0;
+  right: 0; 
+  bottom: 0;
+  opacity: 0.3;
+} */
+
+.col_box_acusticGuitar_descriptions, .col_box_bassGuitar_descriptions {
+  max-width: 505px;
+}
+
+.col_box_acusticGuitar_header, .col_box_bassGuitar_header {
+  font-family: 'Gilroy Bold';
+  text-transform: uppercase;
+  font-size: 58.4px;
+  line-height: 43px;
+  font-weight: 700;
+  color: #212121;
+}
+.col_box_acusticGuitar_header::after, .col_box_bassGuitar_header::after {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  content: "";
+  display: block;
+  width: 64px;
+  height: 2px;
+  background-color: #cc3333;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.col_box_acusticGuitar_description, .col_box_bassGuitar_description {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #86878b;
+}
+
+.col_box_acusticGuitar_description_list, .col_box_bassGuitar_description_list {
+  list-style-type: none;
+  
+  /* list-style-position: inside;  */
+}
+
+.col_box_acusticGuitar_description_list_item, .col_box_bassGuitar_description_list_item {
+  background: url(../img/list_icon_upload_u127_114.png) no-repeat 0px 0px;
+  padding-left: 70px;
+  margin-top: 40px;
+}
+
+.col_box_acusticGuitar_description_list_item:first-child, .col_box_bassGuitar_description_list_item:first-child {
+  margin-top: 45px;
+  padding-top: 0;
+}
+
+.col_box_acusticGuitar_description_list_item_header, .col_box_bassGuitar_description_list_item_header {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  color: #212121;
+}
+
+.col_box_acusticGuitar_description_list_item_descr, .col_box_bassGuitar_description_list_item_descr {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #86878b;
+}
