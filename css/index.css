@@ -136,7 +136,7 @@
   font-weight: 400;
   color: #ffffff;
   border-color: transparent;
-  max-width: 528px;
+  max-width: 628px;
 }
 
 .header_box_description_button {
@@ -304,7 +304,7 @@ padding-bottom: 165px;
 
 }
 
-.col_box_acusticGuitar_img {
+.col_box_acusticGuitar_img, .col_box_bassGuitar_img {
   width: 455px;
   height: 303px;
   opacity: 0.85;
