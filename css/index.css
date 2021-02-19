@@ -347,8 +347,6 @@ padding-bottom: 165px;
 
 .col_box_acusticGuitar_description_list, .col_box_bassGuitar_description_list {
   list-style-type: none;
-  
-  /* list-style-position: inside;  */
 }
 
 .col_box_acusticGuitar_description_list_item, .col_box_bassGuitar_description_list_item {
