@@ -384,3 +384,101 @@ padding-bottom: 165px;
   font-weight: 400;
   color: #86878b;
 }
+
+.col_box_weAreGreat::before {
+  content: '';
+  background-image: url(../img/arrow.png);
+  width: 88px;
+  height: 75px;
+  margin-top: -125px;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.col_box_weAreGreat {
+  display: flex;
+  flex-direction: column;
+}
+
+.col_box_weAreGreat_header {
+  margin-top: 130px;
+  text-transform: uppercase;
+  font-size: 50px;
+  line-height: 43px;
+  font-weight: 400;
+  color: #212121;
+}
+
+.col_box_weAreGreat_header::after {
+  content: '';
+  display: block;
+  background-color: #cc3333;
+  width: 64px;
+  height: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.col_box_weAreGreat_description {
+  display: block;
+  font-size: 25px;
+  line-height: 20px;
+  font-weight: 300;
+  font-style: italic;
+  color: #86878b;
+  margin-bottom: 40px;
+}
+
+.col_box_weAreGreat_description_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.col_box_weAreGreat_description_list_item {
+  width: 30%;
+  background-position: top center;
+  list-style: none;
+  background-repeat: no-repeat;
+  padding-top: 75px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.weAreGreat_descr1 {
+  background-image: url(../img/lamp-icon.png);
+}
+
+.weAreGreat_descr2 {
+  background-image: url(../img/keyboard-icon.png);
+}
+
+.weAreGreat_descr3 {
+  background-image: url(../img/mol-icons.png);
+}
+
+.col_box_weAreGreat_description_list_item_descr {
+  display: none;
+}
+
+.descr_active {
+  display: inline-block;
+}
+
+.col_box_weAreGreat_description_list_item_header {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #333333;
+  cursor: pointer;
+}
+
+.col_box_weAreGreat_description_list_item_descr {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #86878b;
+}
