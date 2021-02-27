@@ -1,6 +1,7 @@
 'use strict'
 
-let iconColliction = [...document.querySelectorAll('.col_box_weAreGreat_description_list_item')]
+let iconColliction = [...document.querySelectorAll('.col_box_weAreGreat_description_list_item')];
+let reviewsList = document.querySelector('.col_box_reviews_list');
 
 iconColliction.forEach(i => {
   i.onclick = () => {
@@ -16,4 +17,12 @@ iconColliction.forEach(i => {
     }
     
   }
-})
+});
+
+document.querySelector('.arrow_right').addEventListener('click', () => {
+  reviewsList.scrollBy(40, 0)
+});
+
+document.querySelector('.arrow_left').addEventListener('click', () => {
+  reviewsList.scrollBy(-40, 0)
+});
