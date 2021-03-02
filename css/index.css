@@ -98,7 +98,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 704px;
+  min-height: 704px;
 }
 
 .header_box_description_caption {
@@ -756,6 +756,7 @@ margin-right: auto;
 
 .widget-link-youtube {
   background-image: url(../svg/social_media_logo_youtube_icon-icons.com_56664.svg);
+  display: none;
 }
 
 .link-text {
@@ -765,14 +766,10 @@ margin-right: auto;
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-
-@media (min-width: 641px) and (max-width: 1200px) {
+@media (max-width: 1200px) {
 .menu_box {
   display: flex;
   flex-direction: column;
-  align-self: start;
-  margin-top: 20px;
-  align-items: flex-end;
 }
 
 .header_nav_list {
@@ -802,8 +799,6 @@ margin-right: auto;
 
 .menu_active {
   display: block;
-  position: relative;
-  z-index: 1;
 }
 
 .header_nav_list_item {
@@ -812,6 +807,38 @@ margin-right: auto;
 
 .header_nav_list_item_link {
   font-size: 20px;
+}
+
+.col_box_article {
+  padding: 4%;
+}
+
+.col_box_courseGuitar_img {
+  display: none;
+}
+
+.col_box_courseGuitar_img_mobile {
+  align-self: center;
+  display: block;
+  opacity: 0.85;
+  background-color: #000000;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+}
+
+
+@media (min-width: 641px) and (max-width: 1200px) {
+.menu_box {
+  align-self: start;
+  margin-top: 20px;
+  align-items: flex-end;
+}
+
+.menu_active {
+  position: relative;
+  z-index: 1;
 }
 
 .header_box {
@@ -826,10 +853,6 @@ margin-right: auto;
   font-size: 70px;
 }
 
-.col_box_article {
-  padding: 4%;
-}
-
 .col_box_guitar_button {
   width: 90px;
   height: 90px;
@@ -841,24 +864,12 @@ margin-right: auto;
   align-self: flex-end;
 }
 
-.col_box_courseGuitar_img {
-  display: none;
+.col_box_article {
+  justify-content: center;
 }
 
 .col_box_courseGuitar_img_mobile {
   width: 455px;
-  align-self: center;
-  display: block;
-  height: 303px;
-  opacity: 0.85;
-  background-color: #000000;
-  background-position: center center;
-  background-size: cover;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-.col_box_article {
-  justify-content: center;
 }
 
 .col_box_courseGuitar_descriptions {
@@ -886,5 +897,123 @@ margin-right: auto;
 .col_box_programPrice_description_list {
   width: 100%;
 }
+}
 
+@media (max-width: 640px) {
+.header_nav_list {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 67px;
+}
+.header_nav_list_item {
+  text-align: center;
+  margin: 0;
+}
+
+.header_nav_list_item_link {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header_box {
+  flex-direction: column;
+  height: auto;
+  padding-top: 30px;
+  height: auto;
+  background-size: auto;
+}
+
+.header_box_form {
+  width: 100vw;
+  margin-top: 30px;
+}
+
+.header_box_description {
+  width: 100%;
+}
+
+.header_box_description_caption {
+  font-size: 50px;
+}
+
+.header_box_description_caption_h2 {
+  font-size: 30px;
+}
+.col_box_article {
+  flex-direction: column;
+}
+
+.col_box_guitar_buttons {
+  flex-direction: row;
+  width: 100%;
+}
+
+.col_box_guitar_descriptions {
+  width: 80%;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.col_box_guitar_img {
+  width: 80%;
+  margin-top: 20px;
+}
+
+.col_box_courseGuitar_img_mobile {
+  width: 100%;
+}
+.col_box_courseGuitar_header {
+  font-size: 30px;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+.col_box_weAreGreat::before {
+  margin-top: -50px;
+}
+
+.col_box_bassGuitar {
+  padding-bottom: 50px;
+}
+
+.col_box_weAreGreat_description_list_item {
+  width: 50%;
+}
+
+.col_box_detalis_header {
+  margin-top: 50px;
+}
+
+.col_box_programPrice_description_list {
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+}
+
+.footer_form {
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer_form_foundation {
+  width: 100%;
+}
+
+.footer_form_message_input {
+  width: 100%;
+  margin-left: 0;
+  height: 100px;
+  box-sizing: border-box;
+}
+
+.footer_form_foundation_input {
+  box-sizing: border-box;
+}
+
+.footer_form_message {
+  width: 100%;
+  margin-top: 30px;
+}
 }
