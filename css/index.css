@@ -697,6 +697,7 @@ margin-right: auto;
 } 
 
 .footer_form_message_input {
+  padding-top: 10px;
   margin-left: 36px;
   width: inherit;
   height: inherit;
@@ -943,6 +944,8 @@ margin-right: auto;
 }
 .col_box_article {
   flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .col_box_guitar_buttons {
@@ -971,7 +974,7 @@ margin-right: auto;
 }
 
 .col_box_weAreGreat::before {
-  margin-top: -50px;
+  margin-top: -85px;
 }
 
 .col_box_bassGuitar {
