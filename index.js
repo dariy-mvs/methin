@@ -26,11 +26,11 @@ iconColliction.forEach(i => {
 });
 
 document.querySelector('.arrow_right').addEventListener('click', () => {
-  reviewsList.scrollBy(40, 0)
+  reviewsList.scrollBy(393, 0)
 });
 
 document.querySelector('.arrow_left').addEventListener('click', () => {
-  reviewsList.scrollBy(-40, 0)
+  reviewsList.scrollBy(-393, 0)
 });
 
 

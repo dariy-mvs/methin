@@ -935,11 +935,11 @@ margin-right: auto;
 }
 
 .header_box_description_caption {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .header_box_description_caption_h2 {
-  font-size: 30px;
+  font-size: 20px;
 }
 .col_box_article {
   flex-direction: column;
@@ -984,12 +984,17 @@ margin-right: auto;
 
 .col_box_detalis_header {
   margin-top: 50px;
+  font-size: 40px;
 }
 
 .col_box_programPrice_description_list {
   flex-direction: column;
   width: 80%;
   align-items: center;
+}
+
+.col_box_programPrice_description_list_item  {
+  width: 100%;
 }
 
 .footer_form {
@@ -1010,6 +1015,7 @@ margin-right: auto;
 
 .footer_form_foundation_input {
   box-sizing: border-box;
+  margin-right: 0;
 }
 
 .footer_form_message {
