@@ -595,6 +595,10 @@ padding-bottom: 165px;
   color: #86878b;
 }
 
+.arrow_price {
+  display: none;
+}
+
 .col_box_reviews_list {
   display: flex;
   overflow-x: auto;
@@ -819,6 +823,7 @@ margin-right: auto;
 }
 
 .col_box_courseGuitar_img_mobile {
+  margin-top: 15px;
   align-self: center;
   display: block;
   opacity: 0.85;
@@ -986,18 +991,27 @@ margin-right: auto;
 }
 
 .col_box_detalis_header {
-  margin-top: 50px;
+  margin-top: 10px;
   font-size: 40px;
 }
 
 .col_box_programPrice_description_list {
-  flex-direction: column;
+  flex-direction: row;
+  overflow-x: auto;
   width: 80%;
   align-items: center;
 }
 
 .col_box_programPrice_description_list_item  {
   width: 100%;
+}
+
+.programPrice_descr_list {
+  display: none;
+}
+
+.arrow_price {
+  display: block;
 }
 
 .footer_form {
