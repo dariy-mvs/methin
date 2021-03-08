@@ -36,7 +36,8 @@
                 <p class='header_box_description_specification'>Для нас всегда остается важнейшей задачей - улучшение качества и доступности музыкального образования. 
                     Наша цель - создать идеальное пространство для вашего обучения!</p>
                 <p class='header_box_description_specification'>Наша цель - создать идеальное пространство для вашего обучения!</p>
-                <button class='header_box_description_button'>Узнать больше</button>
+                <button class='header_box_description_button'>Узнать больше</button> 
+                <!-- По этой кнопке должен появляться попап с видеороликом о школе. Но Ни самого видеоролика, ни попапа в макете нет, и как он должен выглядеть никто не знает. Так что пока так. -->
             </div>
             <div class="header_box_form">
                 <div class="header_box_form_head">
@@ -67,14 +68,30 @@
     <main class='col_box'>
     <article class='col_box_article col_box_guitar'>
         <div class="col_box_guitar_buttons">
-            <button class='col_box_guitar_button'>курс 1</button>
-            <button class='col_box_guitar_button'>курс 2</button>
-            <button class='col_box_guitar_button'>курс 3</button>
+            <ul class="guitar_buttons_list">
+            <li><button class='col_box_guitar_button simple_progressions'>курс 1</button></li>
+            <li><button class='col_box_guitar_button guitarist_mistakes'>курс 2</button></li>
+            <li><button class='col_box_guitar_button main_scales'>курс 3</button></li>
+            </ul>
         </div>
         <div class="col_box_guitar_descriptions">
-            <h3 class='col_box_guitar_header'>Курс по аккустической гитаре</h3>
-            <p class='col_box_guitar_description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas voluptas omnis totam, pariatur voluptate rem consequatur iste esse impedit beatae cupiditate veritatis nam cumque culpa vitae eligendi ex nemo assumenda fuga, error a. Consectetur eos modi minus harum quasi, quae a. Sit rerum harum modi aperiam, facilis veniam laudantium neque.</p>
-        <button class='col_box_guitar_download'>скачать</button>
+            <ul class="col_box_guitar_description_list">
+            <li class="col_box_guitar_description_list_item simple_progressions guitar_descr_item_active">
+                <h3 class='col_box_guitar_header'>Курс по аккустической гитаре: простые прогрессии.</h3>
+                <p class='col_box_guitar_description'>1  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas voluptas omnis totam, pariatur voluptate rem consequatur iste esse impedit beatae cupiditate veritatis nam cumque culpa vitae eligendi ex nemo assumenda fuga, error a. Consectetur eos modi minus harum quasi, quae a. Sit rerum harum modi aperiam, facilis veniam laudantium neque.</p>
+                <button class='col_box_guitar_download'>скачать</button>
+            </li>
+            <li class="col_box_guitar_description_list_item guitarist_mistakes">
+                <h3 class='col_box_guitar_header'>Курс по аккустической гитаре: ошибки гитариста.</h3>
+                <p class='col_box_guitar_description'>2  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas voluptas omnis totam, pariatur voluptate rem consequatur iste esse impedit beatae cupiditate veritatis nam cumque culpa vitae eligendi ex nemo assumenda fuga, error a. Consectetur eos modi minus harum quasi, quae a. Sit rerum harum modi aperiam, facilis veniam laudantium neque.</p>
+                <button class='col_box_guitar_download'>скачать</button>
+            </li>
+            <li class="col_box_guitar_description_list_item main_scales">
+                <h3 class='col_box_guitar_header'>Курс по аккустической гитаре: основные гаммы.</h3>
+                <p class='col_box_guitar_description'>3  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas voluptas omnis totam, pariatur voluptate rem consequatur iste esse impedit beatae cupiditate veritatis nam cumque culpa vitae eligendi ex nemo assumenda fuga, error a. Consectetur eos modi minus harum quasi, quae a. Sit rerum harum modi aperiam, facilis veniam laudantium neque.</p>
+                <button class='col_box_guitar_download'>скачать</button>
+            </li>
+        </ul>
     </div>
         <img class='col_box_guitar_img' src='img/layers-3.png' alt='гитара силуэт'>
     </article>

@@ -19,6 +19,8 @@ let programPriceList = document.querySelector(
 );
 let programPriceBox = document.querySelector(".programPrice");
 let reviewsBox = document.querySelector(".col_box_reviews");
+let courseButtonsList = document.querySelector('.guitar_buttons_list');
+let headerBoxForm = document.querySelector('.header_box_form')
 
 // Функции для событий
 
@@ -104,6 +106,21 @@ let pickOutNextList = (event) => {
 };
 
 //События
+
+headerBoxForm.addEventListener('click', () => headerBoxForm.scrollIntoView(top));
+
+courseButtonsList.addEventListener('click', (event) => {
+  let target = event.target;
+  console.log(target);
+  if (target.tagName !== 'BUTTON') return
+  else {
+    let needClass = [...target.classList].filter(el => el !== 'col_box_guitar_button')[0];
+    [...document.querySelectorAll('.col_box_guitar_description_list_item')].forEach(el => {
+      el.classList.remove('guitar_descr_item_active');
+    });
+    [...document.querySelectorAll('.col_box_guitar_description_list_item')].filter(el => el.classList.contains(needClass))[0].classList.add('guitar_descr_item_active');
+  }
+})
 
 iconColliction.addEventListener("click", (event) => {
   let target = event.target;
