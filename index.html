@@ -148,11 +148,11 @@
 </ul>
 <!-- </div> -->
 </article>
-<article class='col_box_article col_box_detalis'>
+<article class='col_box_article col_box_detalis programPrice'>
     <h3 class='col_box_detalis_header'>стоимость обучения</h3>
     <span class='col_box_detalis_description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis.</span>
 <ul class='col_box_programPrice_description_list'>
-    <li class='col_box_programPrice_description_list_item'>
+    <li class='col_box_programPrice_description_list_item program_basic'>
         <div class="programPrice_name">
             <span class ='programPrice_name_span'>Базовый</span>
         </div>
@@ -181,13 +181,16 @@
             </li>
         </ul>
     </li>
-    <li class='col_box_programPrice_description_list_item'>
+    <li class='col_box_programPrice_description_list_item program_advanced price_item_active'>
         <div class="programPrice_name">
             <span class ='programPrice_name_span'>Продвинутый</span>
         </div>
-        <div class="programPrice_price price_popular">
+        <div class="programPrice_price">
             <span class ='programPrice_price_span'>5,000</span>
             <span class ='programPrice_price_descr_span'>Оплата за месяц</span>
+        </div>
+        <div class='price_active'>
+            <span class='price_active_span'>Самый популярный выбор!</span>
         </div>
         <ul class='programPrice_descr_list'>
             <li class='programPrice_descr_list_item'>
@@ -210,7 +213,7 @@
             </li>
         </ul>
     </li>
-    <li class='col_box_programPrice_description_list_item'>
+    <li class='col_box_programPrice_description_list_item program_professional'>
         <div class="programPrice_name">
             <span class ='programPrice_name_span'>Профессиональный</span>
         </div>
@@ -240,8 +243,8 @@
         </ul>
     </li>  
 </ul>
-<div class="arrows_box">
-    <svg class='arrow arrow_left arrow_price' version="1.0" xmlns="http://www.w3.org/2000/svg"
+<ul class="arrows_box prices_arrows">
+    <li class="arrows_box_item"><svg class='arrow arrow_left' version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="640.000000pt" height="640.000000pt" viewBox="0 0 640.000000 640.000000"
  preserveAspectRatio="xMidYMid meet">
 
@@ -258,7 +261,8 @@ fill="#cc3333" stroke="none">
 -2141 1599 -2375 1775 -76 57 -140 104 -142 104 -3 0 401 -487 897 -1082z"/>
 </g>
 </svg>
-<svg class='arrow arrow_right arrow_price' version="1.0" xmlns="http://www.w3.org/2000/svg"
+</li>
+<li class="arrows_box_item"></li><svg class='arrow arrow_right' version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="640.000000pt" height="640.000000pt" viewBox="0 0 640.000000 640.000000"
  preserveAspectRatio="xMidYMid meet">
 
@@ -275,9 +279,7 @@ fill="#cc3333" stroke="none">
 -2141 1599 -2375 1775 -76 57 -140 104 -142 104 -3 0 401 -487 897 -1082z"/>
 </g>
 </svg>
-<!-- <img class='arrow arrow_left' src="/svg/strelka2.svg" alt='стрелка'>
-<img class='arrow arrow_right' src="/svg/strelka2.svg" alt='стрелка'> -->
-</div>
+</ul>
 </article>
 <article class='col_box_article col_box_detalis col_box_reviews'>
     <h3 class='col_box_detalis_header'>what our customres are saying</h3>
@@ -352,8 +354,8 @@ fill="#cc3333" stroke="none">
         </div>
     </li>
 </ul>
-<div class="arrows_box">
-    <svg class='arrow arrow_left' version="1.0" xmlns="http://www.w3.org/2000/svg"
+<ul class="arrows_box reviews_arrows">
+    <li><svg class='arrow arrow_left' version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="640.000000pt" height="640.000000pt" viewBox="0 0 640.000000 640.000000"
  preserveAspectRatio="xMidYMid meet">
 
@@ -369,8 +371,8 @@ fill="#cc3333" stroke="none">
 424 316 825 616 892 665 67 50 122 92 122 95 0 3 -196 152 -437 331 -461 344
 -2141 1599 -2375 1775 -76 57 -140 104 -142 104 -3 0 401 -487 897 -1082z"/>
 </g>
-</svg>
-<svg class='arrow arrow_right' version="1.0" xmlns="http://www.w3.org/2000/svg"
+</svg></li>
+    <li><svg class='arrow arrow_right' version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="640.000000pt" height="640.000000pt" viewBox="0 0 640.000000 640.000000"
  preserveAspectRatio="xMidYMid meet">
 
@@ -386,10 +388,8 @@ fill="#cc3333" stroke="none">
 424 316 825 616 892 665 67 50 122 92 122 95 0 3 -196 152 -437 331 -461 344
 -2141 1599 -2375 1775 -76 57 -140 104 -142 104 -3 0 401 -487 897 -1082z"/>
 </g>
-</svg>
-<!-- <img class='arrow arrow_left' src="/svg/strelka2.svg" alt='стрелка'>
-<img class='arrow arrow_right' src="/svg/strelka2.svg" alt='стрелка'> -->
-</div>
+</svg></li>
+</ul>
 </article>
 <article class='col_box_article col_box_detalis'>
     <h3 class='col_box_detalis_header'>напишите нам</h3>
@@ -416,6 +416,9 @@ fill="#cc3333" stroke="none">
     </main>
     <footer class="footer_nav">
         <address class="socials">
+            <span class='requisites'>ИП КРЕМЕНЕНКО АРТЁМ СЕРГЕЕВИЧ
+            </span>
+            <span class="requisites">ОГРНИП: 316237500030511 ИНН:230820278417</span>
             <ul class="widget-socials">
               <li class="widget-social">
                 <a href="https://vk.com/methin" class="widget-link widget-link-vk"><span class="link-text">vk</span></a></li>
